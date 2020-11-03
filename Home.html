@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: blue">
+	<div class="container">
+		<table class="table table-border" style="background-color: pink">
+			<thead>
+				<tr>
+					<th>Fill the detail</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>
+						<span class="label label-default">Looking For:</span>
+						Male<input type="radio" name="male">
+			            Female<input type="radio" name="female"><br><br>
+			            <span class="label label-default">Located In:</span>
+			            <input type="text" name="name" value="Place"><br><br>
+			            <span class="label label-default">Religious:</span>
+			            <input type="text" name="name" value="Hindu"><br><br>
+			            <span class="label label-default">Age:</span>
+			            <input type="text" name="name" value="From">
+			            <input type="text" name="name" value="To"><br><br>
+			            <span class="label label-default">Status:</span>
+			            <input type="text" name="name" value="Unmaried"><br><br>
+			            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Mark if want photo"><span class="badge badge-pill badge-success">With Photo</span></button><input type="checkbox" name="chck"><br><br>
+			          
+
+			            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+			              <span class="badge badge-pill badge-success">Find Match</span>
+		                </button>
+
+		                <div class="modal fade" id="myModal">
+			                <div class="modal-dialog modal-dialog-centered modal-sm">
+				                <div class="modal-content">
+					              <div class="modal-header">
+						            <h4 class="modal-title">Submitted</h4>
+						            <button type="button" class="close" data-desmiss="modal">&times;</button>
+					              </div>
+
+					              <div class="modal-body">
+						             Your form is submitted
+						             <div class="alert alert-success alert-desmissible">
+			                           <button type="button" class="close" data-dismiss="alert">&times;</button>
+			                           <b>Success!</b>
+		                             </div>
+					              </div>
+
+					              <div class="modal-footer">
+						            <button type="button" class="btn btn-danger" data-desmiss="modal">Close</button>
+					              </div>
+				                </div>
+			                </div>
+		                </div>
+
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<a href="#" data-toggle="collapse" data-target="#lpu">Note:</a>
+		                  <div id="lpu" class="collapse">
+			               Connecting soul mates not just a arranging a marriage
+		                  </div>
+					</th>
+				</tr>
+			</tbody>
+	</div>
+	<script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+</body>
+</html>

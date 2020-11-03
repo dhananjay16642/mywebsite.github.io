@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  	body{
+  		position:relative;
+  	}
+  	ul.nav-pills {
+    position: fixed;
+  }
+  div.col-8 div {
+    height: 500px;
+  }
+  	#section1 {padding-top: 50px;height: 500px;color: white;background-color: maroon;}
+  	#section2 {padding-top: 50px;height: 500px;color: white;background-color: yellow;}
+  	#section3 {padding-top: 50px;height: 500px;color: white;background-color: blue;}
+  	#section41 {padding-top: 50px;height: 500px;color: white;background-color: pink;}
+  	#section42 {padding-top: 50px;height: 500px;color: white;background-color: green;}
+  </style>
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+  <span class="navbar-text">
+    Matrimonial
+  </span>
+</nav>
+<div class="row">
+	<nav class="col-sm-3 col-4" id="myScrollspy">
+		<ul class="nav nav-pills flex-column">
+			<li class="nav-item">
+				<a class="nav-link active" href="#section1">Jodi</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#section2">Fill Form</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#section3">Couple</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="col-sm-9 col-8">
+		<div id="section1" class="bg-success" style="background-image:url('wed1.jpg');">
+			<h1>Your Bright Future</h1>
+			<h1><mark>Is Our Mission!</mark></h1>
+			<img src="wed1.jpg" alt="wed" height="330px" width="800px">
+			
+		</div>
+		<div id="section2" class="bg-warning">
+
+
+			<table class="table table-border">
+			<thead>
+				<tr>
+					<th>Fill the detail</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>
+						<span class="label label-default">Looking For:</span>
+						Male<input type="radio" name="male">
+			            Female<input type="radio" name="female"><br><br>
+			            <span class="label label-default">Located In:</span>
+			            <input type="text" name="name" value="Place"><br><br>
+			            <span class="label label-default">Religious:</span>
+			            <input type="text" name="name" value="Hindu"><br><br>
+			            <span class="label label-default">Age:</span>
+			            <input type="text" name="name" value="From">
+			            <input type="text" name="name" value="To"><br><br>
+			            <span class="label label-default">Status:</span>
+			            <input type="text" name="name" value="Unmaried"><br><br>
+			            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Mark if want photo"><span class="badge badge-pill badge-success">With Photo</span></button><input type="checkbox" name="chck"><br><br>
+			            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Submit"><span class="badge badge-pill badge-success">Find Match</span></button>
+
+					</th>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+		</div>
+		<div id="section3" class="bg-success">
+
+			<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="cup1.jpg" target="_blank">
+					<img src="cup1.jpg" style="width: 100%">
+					<div class="caption">
+						<p>Couples</p>
+					</div>
+				    </a>
+				</div>
+			</div>
+			<div class="col-md-4">
+			    <div class="thumbnail">
+					<a href="cup2.jpg" target="_blank">
+					<img src="cup2.jpg" alt="Nature" style="width: 100%">
+					<div class="caption">
+						<p>Couple</p>
+					</div>
+				    </a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="cup3.jpg" target="_blank">
+					<img src="cup3.jpg" style="width: 100%">
+					<div class="caption">
+						<p>Couples</p>
+					</div>
+				    </a>
+				</div>
+			</div>
+		</div>
+
+
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

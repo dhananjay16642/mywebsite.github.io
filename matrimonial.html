@@ -1,0 +1,127 @@
+<! DOCTYPE HTML>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-sm bg-danger navbar-light justify-content-end">
+		<ul class="navbar-nav">
+			<a class="navbar-brand" href="#">
+				<img src="wed3.png" alt="logo" style="width:50px;">
+			</a>
+			<li class="nav-item">
+				<a class="nav-link" href="Home.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="About.html">About</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Matches</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Matchs1</a>
+					<a class="dropdown-item" href="#">Matches2</a>
+					<a class="dropdown-item" href="#">Matchs3</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Message</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Message</a>
+					<a class="dropdown-item" href="#">Message</a>
+					<a class="dropdown-item" href="#">Message</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="Contact_matri.html">Contact</a>
+			</li>
+			<button type="button" class="btn btn-default">
+				<span class="glyphicon glyphicon-search"></span>Search
+			</button>
+			<li class="nav-item">
+				<a class="nav-link" href="LogIn1.html">LogIn</a>
+			</li>
+			<li class="nav-item">
+				<button type="button">Register</button>
+			</li>
+
+		</ul>
+	</nav>
+	<div style="background-image:url('wed.jpg');">
+		<br><br>
+		<h2>Welcome To Matrimonial</h2><br>
+		<input type="button" name="sumbit" value="Create your Profile"><br><br><br><br><br>
+		<div class="dropdown">
+			Looking For:
+			Male<input type="radio" name="male">
+			Female<input type="radio" name="female">
+		</div><br>
+		<div>
+			Located in:
+			<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">State</button>
+			<ul class="dropdown-menu">
+				<li>Gujrat</li>
+				<li>Delhi</li>
+				<li>Punjab</li>
+			</ul>
+		</div><br>
+		<div>
+
+			Religious:
+			<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Religious</button>
+			<ul class="dropdown-menu">
+				<li>Hindu</li>
+				<li>Muslim</li>
+				<li>Christan</li>
+			</ul>
+
+		</div><br>
+		<div class="dropdown">
+			Age:<input type="text" value="From">
+			<input type="txt" value="TO">
+
+			Status:
+			<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Select Status</button>
+			<ul class="dropdown-menu">
+				<li>Single</li>
+				<li>Married</li>
+			</ul><br>
+			With Photo:
+			<input type="checkbox" name="chck">
+			<br><br>
+		   
+		    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right"  title="Find match">Find Match</button>
+		</div>
+		
+
+
+	</div><br><br>
+
+		<ul class="pagination pagination-sm">
+			<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+			<li class="page-item"><a class="page-link" href="Home.html">1</a></li>
+			<li class="page-item"><a class="page-link" href="About.html">2</a></li>
+			<li class="page-item"><a class="page-link" href="Contact_matri.html">3</a></li>
+			<li class="page-item"><a class="page-link" href="Home.html">Next</a></li>
+		</ul>
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+			<li class="breadcrumb-item"><a href="About.html">About</a></li>
+			<li class="breadcrumb-item"><a href="#">Message</a></li>
+			<li class="breadcrumb-item"><a href="Contact_matri.html">Contact</a></li>
+		</ul>
+
+	<h2><center><mark>BEST JODI</mark></center></h2>
+	</div>
+	<script>
+    	$(document).ready(function(){
+    		$('[data-toggle="tooltip"]').tooltip();
+    	});
+    </script>
+</body>
+</html>

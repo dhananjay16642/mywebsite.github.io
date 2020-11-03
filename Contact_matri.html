@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<table class="table table-border" style="background-color: yellow">
+			<thead>
+				<tr>
+					<th>Contact Us</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>
+						<span class="label label-primary" data-toggle="tooltip" data-placement="top" title="Fill Name">Name :</span>
+						<input type="text" name="name"><br><br>
+						<span class="label label-primary" data-toggle="tooltip" data-placement="top" title="Fill email">Email:</span>
+						<input type="text" name="email"><br><br>
+						<span class="label label-primary" data-toggle="tooltip" data-placement="top" title="Fill number">Contact No:</span>
+						<input type="text" name="number"><br><br>
+						<span class="label label-primary" data-toggle="tooltip" data-placement="top" title="Write message"">Message:</span><br>
+						<textarea rows="4" cols="50" name="comment" form="usrform">
+                        </textarea>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+			              <span class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="top" title="Submit">Submit</span>
+		                </button>
+
+		                <div class="modal fade" id="myModal">
+			                <div class="modal-dialog modal-dialog-centered modal-sm">
+				                <div class="modal-content">
+					              <div class="modal-header">
+						            <h4 class="modal-title"></h4>
+						            <button type="button" class="close" data-desmiss="modal">&times;</button>
+					              </div>
+
+					              <div class="modal-body">
+						             <div class="alert alert-success alert-desmissible">
+			                           <button type="button" class="close" data-dismiss="alert">&times;</button>
+			                           <b>Success!</b>
+		                             </div>
+					              </div>
+
+					              <div class="modal-footer">
+						            <button type="button" class="btn btn-danger" data-desmiss="modal">Close</button>
+					              </div>
+				                </div>
+			                </div>
+		                </div>
+
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<a href="#" data-toggle="collapse" data-target="#lpu">Note:</a>
+		                  <div id="lpu" class="collapse">
+			               Please fill the detail to contact us
+		                  </div>
+					</th>
+				</tr>
+			</tbody>
+	</div>
+	<script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+</body>
+</html>
